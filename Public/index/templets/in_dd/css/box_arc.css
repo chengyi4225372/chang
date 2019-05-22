@@ -1,0 +1,60 @@
+
+.main {padding-bottom: 20px;background: #f5f5f5;}
+
+.main .row-path {text-align: right;font-size: 14px;}
+.main .row-path div {line-height: 30px;color: #666;}
+.main .row-path h1 {display: inline;font-weight: 400;font-size: inherit;color: #666;}
+.main .row-path small {padding: 0px 5px;font-family: simsun;color: #aaa;}
+.main .row-path a {font-size: 14px;color: #666;}
+.main .row-path a:hover {color: #f00;}
+
+.main .p-menu {float: left;width: 250px;min-height: 300px;}
+
+.main .p-menu .box {width: 230px;transition: margin 0.1s; }
+
+.main .p-menu .block {background: #fff;}
+.main .row-menu .h2 {height: 50px;}
+.main .row-menu .h2 h2 {
+	float: none;height: 50px;line-height: 52px;padding: 0px 20px;text-align: center;font-size: 24px;color: #fff;background: #c00;
+}
+.main .row-menu .ul {padding: 10px 0px;box-shadow: 0px 0px 0px 1px #ddd inset;border-top: none;}
+.main .row-menu li {display: block;position: relative;}
+.main .row-menu li::after {
+	display: block;position: absolute;left: 0;top: 0;width: 0px;height: 100%;content: '';
+	transition: width 0.2s;background: #f00;
+}
+.main .row-menu li::before {
+	display: block;position: absolute;z-index: 1;left: 0;top: 0;width: 0px;height: 100%;content: '';
+	transition: width 0.2s;background: #fc0;
+}
+.main .row-menu li a {
+	display: block;position: relative;z-index: 1;height: 40px;line-height: 42px;overflow: hidden;text-align: center;font-size: 16px;
+}
+.main .row-menu li a:hover, .main .row-menu li.on a {color: #fff;}
+.main .row-menu li:hover::after, .main .row-menu li.on::after {width: 100%;}
+.main .row-menu li:hover::before, .main .row-menu li.on::before {width: 5px;}
+
+.main .row-hot {margin-top: 20px;border: 1px solid #ddd;}
+.main .row-hot .h2 {margin: 0px 10px;padding: 5px 0px;border-bottom: 1px solid #ddd;}
+.main .row-hot .h2 h2 {color: #f00;}
+.main .row-hot .ul {padding: 5px 10px 10px 10px;}
+.main .row-hot li {display: block;margin-top: 5px;color: #666;}
+.main .row-hot li a {display: block;height: 25px;line-height: 27px;overflow: hidden;}
+.main .row-hot li span {color: #666;}
+.main .row-hot li i {
+	float: right;max-width: 36px;padding-left: 15px;color: #ccc;background: url(../images/icon_view.png) left no-repeat;
+	background-size: 10px 10px;
+}
+.main .row-hot li em {
+	float: left;width: 15px;height: 15px;line-height: 17px;margin: 5px 5px 0px 0px;overflow: hidden;
+	text-align: center;font-family: arial;border-radius: 50%;color: #fff;background: #ccc;
+}
+.main .row-hot li a:hover span {color: #f00;}
+.main .row-hot li:nth-of-type(1) em, .main .row-hot li:nth-of-type(2) em, .main .row-hot li:nth-of-type(3) em {
+	background: #f00;
+}
+
+.div-banner {
+	height: 280px;margin-bottom: 20px;background: url(../image/show_shop_banner1.jpg) top no-repeat;
+	background-size: auto 100%;
+}

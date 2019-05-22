@@ -1,0 +1,119 @@
+
+<include file="public/head" />
+    <link href="/Public/index/templets/in_dd/css/show_arc.css" type="text/css" rel="stylesheet" />
+
+
+<include file="public/top" />
+
+<include file="public/menu" />
+
+
+<div id="main" class="main">
+    <div id="div-banner" class="div-banner"></div>
+
+    <div id="div-path" class="div-path">
+        <div class="div">
+            <div class="box">
+
+                <div class="block row-path">
+                    <div>
+                        <i>当前位置：</i>
+                        <span>
+                            <a href="/">首页</a><small>&gt;</small>
+                            <a href='http://www.daqianchao.com/jiameng/'>合作加盟</a><small>&gt;</small>
+                            <a href='http://www.daqianchao.com/kehu/'>合作案例</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="div-arc" class="div-arc" data-id="2364" data-mid="3">
+        <div class="div">
+            <div class="p-menu">
+                <div class="box">
+
+                    <div class="block row-menu">
+                        <div class="h2"><h2>合作加盟</h2></div>
+                        <div class="ul">
+                            <ul>
+                                <volist name="good" id="vo" key="k" >
+                                    <li <eq name="Think.get.pid" value="$vo.id" >class=" on col{$k}" <else /> class="col{$k}"  </eq>><a href="{:U('cooperation/index',array('id'=>$vo['id']))}">{$vo.title}</a></li>
+                                </volist>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="block row-hot">
+                        <div class="h2"><h2>热门推荐</h2></div>
+                        <div class="ul">
+                            <ul>
+                                <volist name="hot" id="vo" key="k">
+                                    <li><a href="{:U('cooperation/detail',array('id'=>$vo.id))}"><i>{$vo.lan|default=''}</i><em>{$k}</em><span>{$vo.title}</span></a></li>
+                                </volist>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-arc">
+                <div class="box">
+                    <div class="block row-bb">
+                        <a href="/activity/"><img src="http://www.daqianchao.com/templets/indd/image/show_banner_nhj.jpg" /></a>
+                    </div>
+                    <div class="block row-title">
+                        <h1>{$detail.title|default=''}</h1>
+                    </div>
+                    <div class="block row-item">
+                        <i class="c-date">发布于：{$detail.create_time}</i>
+                        <i class="c-view">浏览量：{$detail.lan|default=''}<small></small></i>
+                    </div>
+                    <div class="block row-content">
+                        <div class="b-content">
+                            <div class="d-content">
+                                 {$detail.content}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block row-near">
+                        <div class="ul">
+                            <ul>
+                                <li class="col-pre">上一篇：<a href='http://www.daqianchao.com/kehu/2363.html'>海南省海口市林总与公司美女招商经理签约海口的定制酒2000件</a> </li>
+                                <li class="col-next">下一篇：<a href='http://www.daqianchao.com/kehu/2428.html'>2018年9月28日广东潮州代理商张总，黔朝原酱实体店盛大开业。</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block row-relate">
+                        <div class="h2"><h2>相关产品</h2></div>
+                        <div class="ul d-img">
+                            <ul>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="go2top" class="go2top">
+    <div class="div">
+        <div class="box">
+            <div class="block row-btn">
+                <a class="c-go2top" href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<include file="public/foot" />
+
+<script src="/Public/index/templets/in_dd/js/show_arc.js" type="text/javascript"></script>
+
+<include file="public/kefu" />
+</body>
+</html>
+

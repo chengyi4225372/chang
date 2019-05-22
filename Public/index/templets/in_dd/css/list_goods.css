@@ -1,0 +1,34 @@
+
+@import "init.css";
+@import "head.css";
+@import "foot.css";
+@import "box_arc.css";
+
+.div-arc .p-menu {float: left;width: 250px;min-height: 300px;}
+.div-arc .p-menu .box {width: 230px;background: #fff;}
+
+.div-list .row-list .b-list {border-top: 1px solid #ddd;}
+.div-list .row-list .b-list li {float:left;width: 33.33%;margin-top: 20px;}
+.div-list .row-list .b-list .c-box {
+	margin: 0px 10px;padding-bottom: 15px;overflow: hidden;box-shadow: 0px 0px 0px 1px #ddd inset;border-radius: 5px;
+}
+.div-list .row-list .b-list .c-img {
+	display: block;position: relative;margin: 1px 1px 0px 1px;height: 0;padding-top: 100%;overflow: hidden;
+	border-radius: 5px 5px 0px 0px;
+}
+.div-list .row-list .b-list .c-img img {
+	position: absolute;left: 0;top: 0;width: 100%;height: auto;transition: transform 0.2s;
+}
+.div-list .row-list .b-list .c-img em {
+	display: block;position: absolute;left: -1px;bottom: 0;width: calc(100% - 8px);line-height: 20px;padding: 5px;
+	overflow: hidden;text-align: center;text-shadow: 0px 0px 2px #666;font-size: 14px;color: #fff;
+	transition: background 0.2s;background: rgba(255, 0, 0, 0.6);
+}
+.div-list .row-list .b-list:hover .c-box {box-shadow: 0px 0px 0px 1px #ccc inset;}
+.div-list .row-list .b-list .c-img:hover img {transform: scale(1.1, 1.1);}
+.div-list .row-list .b-list .c-img:hover em {background: rgba(255, 0, 0, 0.1);}
+.div-list .row-list .b-list span {
+	height: 25px;line-height: 27px;margin-top: 10px;text-align: center;font-size: 14px;
+}
+.div-list .row-list .b-list li span i {padding: 0px 5px;}
+.div-list .row-list .d-pager {padding: 20px;}

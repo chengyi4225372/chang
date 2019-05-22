@@ -1,0 +1,107 @@
+<include file="public/head" />
+
+<link href="/Public/index/templets/in_dd/css/list_arc_pic.css" type="text/css" rel="stylesheet" />
+
+
+<include file="public/top" />
+
+<include file="public/menu" />
+
+<div id="main" class="main">
+    <div id="div-banner" class="div-banner"></div>
+
+    <div id="div-path" class="div-path">
+        <div class="div">
+            <div class="box">
+
+                <div class="block row-path">
+                    <div>
+                        <i>当前位置：</i>
+                        <span><a href="/">首页</a><small>&gt;</small><a href='http://www.daqianchao.com/jiameng/'>合作加盟</a><small>&gt;</small><a href='http://www.daqianchao.com/kehu/'>合作案例</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="div-list" class="div-list">
+        <div class="div">
+            <div class="p-menu">
+                <div class="box">
+
+                    <div class="block row-menu">
+                        <div class="h2"><h2>合作加盟</h2></div>
+                        <div class="ul">
+                            <ul>
+                                <volist name="good" id="vo" key="k" >
+                                    <li <eq name="Think.get.id" value="$vo.id" >class=" on col{$k}" <else /> class="col{$k}"  </eq>><a href="{:U('cooperation/index',array('id'=>$vo['id']))}">{$vo.title}</a></li>
+                                </volist>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block row-hot">
+                        <div class="h2"><h2>热门推荐</h2></div>
+                        <div class="ul">
+                            <ul>
+                                <volist name="hot" id="vo" key="k">
+                                <li><a href="{:U('cooperation/detail',array('id'=>$vo.id))}"><i>{$vo.lan|default=''}</i><em>{$k}</em><span>{$vo.title}</span></a></li>
+                                </volist>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-list">
+                <div class="box">
+                    <div class="block row-list">
+                        <div class="ul b-list d-img">
+                            <ul>
+                                <volist name="detail" id="vo" >
+                                    <li>
+                                        <div class="c-box">
+                                            <a class="c-img" href="{:U('Cooperation/detail',array('id'=>$vo['id'],'pid'=>$vo['pid']))}">
+                                                <img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" data-src="/Uploads/{$vo.img}" width="300" height="220" /></a>
+                                            <span>
+                                                <a href="{:U('Cooperation/detail',array('id'=>$vo['id'],'pid'=>$vo['pid']))}">{$vo.title}</a>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </volist>
+
+                            </ul>
+                        </div>
+                        <div class="ul d-pager">
+                            <ul>
+                                <for start="0" end="$size" name="i" >
+                                    <li><a href="{:U('cooperation/index',array('id'=>$_GET['id'],'p'=>$i+1))}">{$i+1}</a></li>
+                                </for>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="go2top" class="go2top">
+    <div class="div">
+        <div class="box">
+            <div class="block row-btn">
+                <a class="c-go2top" href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="public/foot" />
+<script src="/Public/index/templets/in_dd/js/list_arc_pic.js" type="text/javascript"></script>
+
+
+<include file="public/kefu" />
+</body>
+</html>
+

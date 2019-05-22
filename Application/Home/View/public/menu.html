@@ -1,0 +1,155 @@
+<div id="head" class="head">
+    <div class="div">
+        <div class="box">
+            <div class="block row-logo">
+                <h1><a href="/"><img src="/Public/index/templets/in_dd/picture/logo.png" alt="贵州大黔朝酒业有限公司" title="贵州大黔朝酒业有限公司" /></a></h1>
+            </div>
+            <div class="block row-link">
+                <div class="ul">
+                    <ul>
+                        <li class="col-wx">
+                            <span><a href="javascript:;"></a></span>
+                            <div>
+                                <dl><dd><img src="/Public/index/templets/in_dd/image/head/ewm.jpg" /></dd><dd>官方微信</dd></dl>
+                            </div>
+                        </li>
+                        <li class="col-contact">
+                            <span><a rel="nofollow" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=35439644&site=qq&menu=yes"></a></span>
+                            <div>
+                                <dl>
+                                    <dd>在线咨询</dd>
+                                    <dd>
+                                        <a rel="nofollow" class="c-qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=35439644&site=qq&menu=yes"></a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 导航---s -->
+            <div class="block row-nav">
+                <div class="ul">
+                    <ul>
+                        <li>
+                            <span><a href='/'>主页</a></span>
+                            <dl>
+                                <dd><a href="{:U('index/index')}">外链地址</a></dd>
+                            </dl>
+                        </li>
+
+                        <li>
+                            <span><a href="{:U('company/index')}">走进大黔朝</a> </span>
+                            <dl>
+                                <dd><a href="{:U('company/cjd')}">藏酒洞</a></dd>
+                                <dd><a href="{:U('company/cvideo')}">洞藏酒视频</a></dd>
+                                <dd><a href="{:U('company/fz')}">发展历程</a></dd>
+                                <dd><a href="{:U('company/gy')}">传承工艺</a></dd>
+                                <volist name="moves" id="vo">
+                                <dd><a href="{:U('company/index')}?id={$vo.id}">{$vo.title}</a></dd>
+                                 </volist>
+                                <!--
+
+
+                                <dd><a href=".xinwen/gongsi/">公司新闻</a></dd>
+
+                                <dd><a href=".lianxi/">联系我们</a></dd>
+                                <dd><a href=".hddt/">活动动态</a></dd>
+
+                                <dd><a href=".gongyi/">传承工艺</a></dd>
+-->
+                            </dl>
+                        </li>
+                        <li>
+                        <span><a href="{:U('Cooperation/index')}">合作加盟</a> </span>
+                        <dl>
+                            <dd><a href="{:U('Cooperation/info')}">合作政策</a></dd>
+                            <dd><a href="{:U('Cooperation/info')}">合作申请</a></dd>
+                                <volist name="good" id="vo">
+                                    <dd><a href="{:U('Cooperation/index',array('id'=>$vo['id']))}">{$vo.title}</a></dd>
+                                </volist>
+
+<!--
+                            <dd><a href="/jiameng/#info2">合作政策</a></dd>
+
+                            <dd><a href="/jiameng/#submit">合作申请</a></dd>
+
+                            <dd><a href=".kehu/">合作案例</a></dd>
+
+                            <dd><a href=".xinwen/zhangshang/">常见问题</a></dd>
+-->
+
+                        </dl>
+                    </li><li>
+                        <span><a href="{:U('protuct/index')}">产品中心</a> </span>
+                        <dl>
+                            <volist name="protuct" id="vo">
+                            <dd><a href="{:U('protuct/index')}?id={$vo.id}">{$vo.title}</a></dd>
+                            </volist>
+ <!--
+                            <dd><a href=".yuanjiang/">酱香定制酒</a></dd>
+
+                            <dd><a href=".sanjiu/">茅台镇散酒</a></dd>
+
+                            <dd><a href=".cpzx/yuanjiangjiu/">茅台镇原浆酒</a></dd>
+
+                            <dd><a href=".hunyan/">婚宴酒</a></dd>
+
+                            <dd><a href=".zscp/">特色白酒</a></dd>
+-->
+                        </dl>
+                    </li><li>
+                        <span><a href="{:U('news/index')}">资讯中心</a> </span>
+                        <dl>
+                            <volist name="news" id="vo">
+                            <dd><a href="{:U('news/index')}?id={$vo.id}">{$vo.title}</a></dd>
+                            </volist>
+<!--
+                            <dd><a href=".jiankongshipin/">动态视频</a></dd>
+
+                            <dd><a href=".xinwen/meiti/">媒体焦点</a></dd>
+
+                            <dd><a href=".xinwen/jiuchang/">酒厂展示</a></dd>
+-->
+
+                        </dl>
+                    </li><li>
+                        <span><a href="{:U('drink/index')}">白酒专栏</a> </span>
+                        <dl>
+                            <volist name="bai" id="vo">
+                            <dd><a href="{:U('drink/index')}?id={$vo.id}">{$vo.title}</a></dd>
+                            </volist>
+<!--
+                            <dd><a href=".baijiu/xiangxing/">香型种类</a></dd>
+
+                            <dd><a href=".baijiu/shipin/">白酒视频</a></dd>
+
+                            <dd><a href=".baijiu/jiameng/">白酒加盟案例</a></dd>
+
+                            <dd><a href=".baijiu/wenti/">相关问题</a></dd>
+-->
+
+                        </dl>
+                    </li>
+                        <li>
+                        <span><a href="{:U('ding/index')}">定制酒专栏</a> </span>
+                        <dl>
+                            <volist name="ding" id="vo">
+                            <dd><a href="{:U('ding/index')}?id={$vo.id}">{$vo.title}</a></dd>
+                            </volist>
+                        </dl>
+                    </li><li>
+                        <span><a href="{:U('activity/index')}">促销活动</a> </span>
+                        <dl>
+                            <dd><a href="{:U('activity/index')}">精品酒</a></dd>
+                            <dd><a href="{:U('activity/index')}">年份酒</a></dd>
+                            <dd><a href="{:U('activity/index')}">纪念酒</a></dd>
+                        </dl>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 导航---e -->
+    </div>
+</div>

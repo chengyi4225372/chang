@@ -1,0 +1,100 @@
+<div id="call" class="call">
+    <div class="div">
+        <div class="box">
+            <div class="block row-btn">
+                <a href="javascript:;"><i>在线</i><u>客服</u></a>
+            </div>
+            <div class="block row-info">
+                <a class="c-close" href="javascript:;">x</a>
+                <h2>在线客服</h2>
+                <form action="javascript:;">
+                    <input class="c-input" id="lxb-tel" placeholder="请输入您的电话" />
+                    <input class="c-btn" id="lxb-btn" type="submit" value="免费回电" />
+                </form>
+                <p>我们将立即回电。该通话对您免费！请直接输入11位手机号。</p>
+                <ins>
+                    <a class="c-tel" href="tel:17120821111">电话咨询</a>
+                    <a class="c-ask" href="javascript:;" onclick="openwindow('http://p.qiao.baidu.com/cps/chat?siteId=12855406&userId=26897337','',750,664)">在线咨询</a>
+                </ins>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 通用信息服务栏 s-->
+<div class="right-kefu">
+    <ul>
+        <li>
+            <a href="javascript:;" onclick="openwindow('http://p.qiao.baidu.com/cps/chat?siteId=12855406&userId=26897337','',750,664)" rel="nofollow">
+                <i class="kf"></i>
+                <em>客服咨询</em>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" rel="nofollow" onclick="test()">
+                <i class="call"></i>
+                <em>免费通话</em>
+            </a>
+            <script>
+                function test(){
+                    $("#call").addClass('on-show');
+                }
+            </script>
+        </li>
+        <li>
+            <a href="javascript:;" onclick="openwindow('http://p.qiao.baidu.com/cps/chat?siteId=12855406&userId=26897337','',750,664)" rel="nofollow">
+                <i class="design"></i>
+                <em>定制客服</em>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" onclick="openwindow('http://p.qiao.baidu.com/cps/chat?siteId=12855406&userId=26897337','',750,664)" rel="nofollow">
+                <i class="privilege"></i>
+                <em>合作加盟</em>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- 通用信息服务栏 e-->
+<script>
+    /*离线宝电话*/
+    document.getElementById("lxb-btn").onclick = function () {
+        lxb.call(document.getElementById("lxb-tel"));
+    };
+    /*左下角咨询图标*/
+    o.run('#call', function(divId, that) {
+        var dEl = jQuery(divId);
+        var btnEl = jQuery(divId + ' .row-btn a');
+        var closeEl = jQuery(divId + ' .row-info .c-close');
+        var onCss = 'on-show';
+        btnEl.click(function() {
+            dEl.addClass(onCss);
+        });
+        closeEl.click(function() {
+            dEl.removeClass(onCss);
+        });
+    });
+</script>
+<script>
+    function openwindow(url,name,iWidth,iHeight){
+        var url; //转向网页的地址;
+        var name; //网页名称，可为空;
+        var iWidth; //弹出窗口的宽度;
+        var iHeight; //弹出窗口的高度;
+        //window.screen.height获得屏幕的高，window.screen.width获得屏幕的宽
+        var iTop = (window.screen.height-30-iHeight)/2; //获得窗口的垂直位置;
+        var iLeft = (window.screen.width-10-iWidth)/2; //获得窗口的水平位置;
+        window.open(url,name,'height='+iHeight+',,innerHeight='+iHeight+',width='+iWidth+',innerWidth='+iWidth+',top='+iTop+',left='+iLeft+',toolbar=no,menubar=no,scrollbars=auto,resizeable=no,location=no,status=no');
+    }
+</script>
+<script type="text/javascript" src="http://push.zhanzhang.baidu.com/push.js"></script>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"4","bdPos":"right","bdTop":"235"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<script>
+    // var _hmt = _hmt || [];
+    // (function() {
+    //   var hm = document.createElement("script");
+    //   hm.src = "https://hm.baidu.com/hm.js?d6f4adf7c6735a51e87b250e6c28ac0e";
+    //   var s = document.getElementsByTagName("script")[0];
+    //   s.parentNode.insertBefore(hm, s);
+    // })();
+</script>

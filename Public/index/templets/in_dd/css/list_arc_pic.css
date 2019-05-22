@@ -1,0 +1,25 @@
+
+@import "init.css";
+@import "head.css";
+@import "foot.css";
+@import "box_arc.css";
+
+.div-list .p-menu {float: left;width: 250px;min-height: 300px;}
+.div-list .p-menu .box {width: 230px;background: #fff;}
+
+.div-list .row-list .b-list {border-top: 1px solid #ddd;}
+.div-list .row-list .b-list li {float: left;width: 33.33%;margin-top: 20px;}
+.div-list .row-list .b-list li .c-box {
+	margin: 0px 10px;padding-bottom: 10px;box-shadow: 0px 0px 0px 1px #ddd inset;border-radius: 5px;
+}
+.div-list .row-list .b-list li .c-box:hover {box-shadow: 0px 0px 0px 1px #ccc inset;}
+.div-list .row-list .b-list li .c-img {padding-top: 75%;border-radius: 5px 5px 0px 0px;}
+.div-list .row-list .b-list li .c-img img {transition: transform 0.2s;}
+.div-list .row-list .b-list li .c-img img:hover {transform: scale(1.1, 1.1);}
+.div-list .row-list .b-list li span {
+	height: 46px;line-height: 23px;margin-top: 10px;padding: 0px 10px;
+	text-align: center;font-size: 18px;
+}
+.div-list .row-list .b-list li span a:hover {color: #f00;}
+
+.div-list .row-list .d-pager {padding: 20px;}

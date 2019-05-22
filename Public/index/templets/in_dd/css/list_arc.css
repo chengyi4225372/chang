@@ -1,0 +1,14 @@
+
+@import "init.css";
+@import "head.css";
+@import "foot.css";
+@import "box_arc.css";
+
+.div-list .row-list .ul {border-top: 1px solid #ddd;}
+.div-list .row-list li {display: block;margin-top: 20px;}
+.div-list .row-list li span {line-height: 20px;margin-top: 15px;font-size: 18px;}
+.div-list .row-list li span a:hover {color: #f00;}
+.div-list .row-list li p {margin-top: 10px;font-size: 14px;color: #666;}
+.div-list .row-list li em {float: right;margin-top: 10px;font-size: 14px;color: #aaa;}
+
+.div-list .row-pager .ul {padding: 20px;}

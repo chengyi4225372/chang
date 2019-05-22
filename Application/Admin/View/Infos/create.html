@@ -1,0 +1,283 @@
+
+<include file="Share/header" />
+
+<!-- 内容区域 -->
+<div class="tpl-content-wrapper">
+
+    <div class="row-content am-cf">
+
+        <div class="row">
+
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                <div class="widget am-cf">
+                    <div class="widget-head am-cf">
+                        <div class="widget-title am-fl">{$title}</div>
+                        <div class="widget-function am-fr">
+                            <a href="javascript:;" class="am-icon-cog"></a>
+                        </div>
+                    </div>
+                    <div class="widget-body am-fr">
+
+                        <form class="am-form tpl-form-border-form tpl-form-border-br">
+
+
+
+
+                            <div class="am-form-group">
+                                <label for="mid" class="am-u-sm-3 am-form-label">产品品牌 <span class="tpl-form-line-small-title">model</span></label>
+                                <div class="am-u-sm-9">
+                                    <select data-am-selected="{searchBox: ''}" style="display: none;" id="mid">
+                                        <volist name="models" id="vo" >
+                                            <option value="{$vo.id}">{$vo.models}</option>
+                                        </volist>
+                                    </select>
+
+                                </div>
+                            </div>
+
+
+                            <div class="am-form-group">
+                                <label for="cates_id" class="am-u-sm-3 am-form-label">关联产品分类一级 <span class="tpl-form-line-small-title">Categroy</span></label>
+                                <div class="am-u-sm-9">
+                                    <select data-am-selected="{searchBox: ''}" style="display: none;" id="cates_id">
+                                        <volist name="cates_one" id="vo" >
+                                        <option value="{$vo.id}">{$vo.cates_one}</option>
+                                        </volist>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="am-form-group">
+                                <label for="cates_two_id" class="am-u-sm-3 am-form-label">关联产品分类二级 <span class="tpl-form-line-small-title">Categroy</span></label>
+                                <div class="am-u-sm-9">
+                                    <select data-am-selected="{searchBox: ''}" style="display: none;" id="cates_two_id">
+
+                                    </select>
+
+                                </div>
+                            </div>
+
+
+                            <div class="am-form-group">
+                                <label for="title" class="am-u-sm-3 am-form-label">产品标题 <span class="tpl-form-line-small-title">Title</span></label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="title" placeholder="请输入产品标题" value="{$cases_detail.title}">
+                                    <small>请填写标题文字</small>
+                                </div>
+                            </div>
+
+                            <div class="am-form-group">
+                                <label for="user-weibo" class="am-u-sm-3 am-form-label">展示图 <span class="tpl-form-line-small-title">Images</span></label>
+                                <div class="am-u-sm-9">
+                                    <div class="am-form-group am-form-file">
+                                        <div class="tpl-form-file-img">
+
+                                            <img data-src="/Uploads/{$cases_detail.img}" alt="" id="cover-img">
+
+                                        </div>
+                                        <button type="button" class="am-btn am-btn-danger am-btn-sm">
+                                            <i class="am-icon-cloud-upload "></i> 添加展示图片</button>
+                                        <input id="file_upload" type="file" multiple="" name="file_upload">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="am-form-group">
+                                <label for="content" class="am-u-sm-3 am-form-label">商品描述<span class="tpl-form-line-small-title">Content</span></label>
+                                <div class="am-u-sm-9">
+                                    <textarea class="" rows="10" id="content" placeholder="请输入文章内容">{$cases_detail.content}</textarea>
+                                </div>
+                            </div>
+
+                            <div class="am-form-group">
+                                <div class="am-u-sm-9 am-u-sm-push-3">
+                                    <button type="button" class="am-btn am-btn-primary tpl-btn-bg-color-success j-submit">提交</button>
+                                    <button type="button" class="am-btn am-btn-default "  onclick="window.location.href='index'">取消</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    var editor;
+
+    KindEditor.ready(function(K) {
+
+        editor = K.create('#content', {
+
+            allowFileManager : true,
+
+            uploadJson:'{:U("fileUpload")}', //上传控制器所在url
+
+            afterBlur: function(){this.sync();}
+
+        });
+
+    });
+
+</script>
+
+<script>
+    $("#cates_id").change(function(){
+
+    })
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        var _this = this;
+        // 获取新闻ID
+        var _search = window.location.search;
+
+        var _page_id = ''
+
+        //图片路径
+        var _img_path = ''
+
+        if (_search.indexOf('?id') != -1){
+
+            _page_id = _search.split('id=')[1];
+
+        }
+
+        //还原值
+        var $cases_detail = {$cases_detail | json_encode}
+
+        if($cases_detail) {
+            $("#mid").find("option[value="+$cases_detail.mid+"]").attr("selected",true);
+            $("#cates_id").find("option[value="+$cases_detail.cates_id+"]").attr("selected",true);
+            $("#cates_two_id").find("option[value="+$cases_detail.cates_two_id+"]").attr("selected",true);
+            //图片显示
+            _this._img_path = $cases_detail.img;
+            $('#cover-img').attr('src','/Uploads/'+_this._img_path)
+        }
+
+
+        // 提交
+        $('.j-submit').on('click',function(){
+
+            var is_show = $('.tpl-switch-btn').is(":checked") ? 1 : 0;
+
+            if(!$('#title').val()){
+                alert('标题不能为空！');
+                return false
+            }
+
+            var param = {
+
+                title : $('#title').val(),
+                mid : $('#mid option:selected').val(),
+                cates_id : $('#cates_id option:selected').val(),
+                cates_two_id : $('#cates_two_id option:selected').val(),
+                img : _this._img_path,
+                content : $('#content').val()
+
+            }
+
+            if (!_page_id) {
+
+                param = $.extend(param,{
+
+                    do : 'create'
+
+                })
+
+            } else {
+
+                param = $.extend(param,{
+
+                    do : 'edit',
+
+                    id : _page_id
+
+                })
+
+            }
+
+            $.ajax({
+
+                url: "create",
+
+                data:param,
+
+                type:'post',
+
+                success:function(res) {
+
+                    if(res.status == 1){
+
+                        alert("操作成功！")
+
+                        window.location.href = '{:U("infos/index")}';
+
+                    } else {
+
+                        alert(res.data)
+
+                    }
+
+                }
+
+            });
+
+
+        })
+        //上传图片
+        file_upload.onchange = function(e){
+
+            var files = this.files
+
+            var data = new FormData();
+
+            for (var i = 0; i < files.length; i++) {
+
+                data.append('file[]', files[i]);
+
+            }
+
+            $.ajax({
+
+                url: "uploadImg",
+
+                data: data,
+
+                type:'post',
+
+                cache: false,
+
+                contentType: false,
+
+                processData: false,
+
+                success:function(res) {
+
+                    if(res) {
+
+                        _this._img_path = res
+
+                        $('#cover-img').attr('src','/Uploads/'+_this._img_path)
+
+
+                    }
+
+                }
+
+            });
+
+        }
+
+    })
+
+</script>
+
+
+
+
+<include file="Share/footer" />

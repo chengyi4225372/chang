@@ -1,0 +1,31 @@
+
+@import "init.css";
+@import "head.css";
+@import "foot.css";
+
+#head {height: 90px;background: #333;}
+
+.main {padding-bottom: 20px;background: #000;}
+
+.div-banner .div {width: 100%;max-width: none;}
+.div-banner .row-img img {display: block;max-width: 100%;margin: 0 auto;overflow: hidden;}
+
+.div-list .row-list {margin-top: 20px;}
+.div-list .row-list .ul {width: calc(100% + 20px);transform: translate(-10px, 0px);}
+.div-list .row-list li {float: left;width: 33.33%;}
+.div-list .row-list li a {display: block;margin: 0px 10px;overflow: hidden;}
+.div-list .row-list li span {
+    position: relative;height: 60px;line-height: 60px;text-align: center;font-size: 34px;color: #fff;
+}
+.div-list .row-list li span::before, .div-list .row-list li span::after {
+    display: block;position: absolute;left: 20%;top: 0;width: 100px;height: 100%;content: '';
+    opacity: 0;transition: opacity 0.2s;
+    background: url(../image/ccgy/icon_h2.png) left bottom no-repeat;
+}
+.div-list .row-list li span::after {left: auto;right: 20%;background-position: right top;}
+.div-list .row-list li .c-img {margin-top: 10px;padding-top: 71%;}
+.div-list .row-list li img {transition: transform 0.2s;}
+.div-list .row-list li:hover span::before, .div-list .row-list li:hover span::after {
+    opacity: 1;
+}
+.div-list .row-list li:hover img {transform: scale(1.1, 1.1);}

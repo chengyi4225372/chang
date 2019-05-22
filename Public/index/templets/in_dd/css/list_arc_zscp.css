@@ -1,0 +1,116 @@
+
+@import "init.css";
+@import "head.css";
+@import "foot.css";
+
+
+.main{ background: #fff; }
+.main .th1 {height: auto;text-align: center;border-bottom: 3px solid #888;}
+.main .th1 h2 {display: inline-block;float: none;height: 40px;line-height: 42px;}
+.main .th1 h2 a{ color: #f00;font-weight: 600; font-size: 20px;}
+
+.div-banner .div{ width: 100%; }
+.div-banner .row-banner { display: block; overflow: hidden;}
+.div-banner .row-banner img{ width: 100%; }
+
+
+.div-tj .box{ background: #fff;}
+.div-tj .row-th{ background: #fff;}
+.div-tj .div {margin-bottom: 0;}
+.div-tj .row-list { padding: 5px 20px; margin: 10px 0px; background: #fff; border: 1px solid #cacaca;}
+.div-tj .row-list .c-page {display: block;width: 15px;font-size: 14px;color: #aaa;background: none;}
+.div-tj .row-list .c-page:hover {color: #f00;}
+.div-tj .row-list .ul {width: calc(100% + 10px);transform: translate(-5px, 0px);}
+.div-tj .row-list li {display: none;float: left;width: 25%;}
+.div-tj .row-list li .c-img img{ transition: transform 0.2s; }
+.div-tj .row-list li .c-img img:hover { transform: scale(1.1, 1.1); }
+.div-tj .row-list li:nth-of-type(1), .div-tj .row-list li:nth-of-type(2),
+.div-tj .row-list li:nth-of-type(3), .div-tj .row-list li:nth-of-type(4) {
+    display: block;
+}
+.div-tj .row-list li div {margin: 0px 5px;transition: border 0.3s;border: 1px solid #ddd;background: #fff;}
+.div-tj .row-list li span {
+    height: 40px;line-height: 42px;text-align: center;font-size: 12px;transition: border 0.2s;
+    border-top: 1px solid #ddd;
+}
+.div-tj .row-list li a:hover {color: #f00;}
+.div-tj .row-list li:hover div {border-color: #f00;}
+.div-tj .row-list li:hover span {border-color: #f00;}
+
+
+.div-cont1 .row-title{ display: block; overflow: hidden;  }
+.div-cont1 .row-title span{ width: 100%; display: inline-block; overflow: hidden; text-align: center;  font-size: 26px; color: #f00; }
+.div-cont1 .row-title i{ width: 100%;  display: inline-block; overflow: hidden; text-align: center;font-size: 20px; color: #f00;  }
+.div-cont1 .row-title ins{ display: block; margin: 0 auto; overflow: hidden;  text-align: center; height: 2px; background: #f00; width: 300px;}
+.div-cont1 .row-title p{ width: 100%; display: inline-block; overflow: hidden; text-align: center;  font-size: 20px; color: #f00;}
+
+.div-cont2 {background: url(../images/cont2_bg.jpg) no-repeat; background-size: 100% auto; }
+.div-cont2 .row-cont2 { height: 1120px; }
+.div-cont2 .row-cont2 .ul {padding: 180px 0px 0px 180px;}
+.div-cont2 .row-cont2 li {display: block;}
+.div-cont2 .row-cont2 .li1 {
+    width: 400px;line-height: 48px;font-size: 28px; color: #fff;
+}
+.div-cont2 .row-cont2 .li2 {
+    width: 400px; margin-top: 100px; line-height: 48px;font-size: 28px; color: #fff;
+}
+.div-cont2 .row-cont2 .li3 {
+    width: 400px; margin-top: 130px; line-height: 48px;font-size: 28px; color: #fff;
+}
+.div-cont2 .row-cont2 .li4 {
+    width: 850px; margin-top: 50px; line-height: 40px;font-size: 24px; color: #fff;
+}
+.div-hongd .div { width: 100%; clear: both;}
+.div-hongd .row-hongd{ display: block; overflow: hidden; font-size: 0; }
+
+.div-cont3{ background: #000; }
+.div-cont3 .row-cont3 { display: block; overflow: hidden; }
+.div-cont3 .row-cont3 span{ width: 100%; display: inline-block; overflow: hidden; font-size: 28px; margin-top: 10px; color: #fff; text-align: center;}
+.div-cont3 .row-cont3 div em{  display: block; overflow: hidden;  margin: 5px 200px; text-align: center; border:1px solid #fff; font-size: 22px; color: #fff; }
+.div-cont3 .row-cont3 p{ padding: 5px 138px; display: inline-block; overflow: hidden; font-size: 18px; line-height: 28px; color: #fff; text-align: left;}
+
+.div-cont3 .row-td { height: 555px; width: auto;}
+.div-cont3 .row-td li{ height: 550px; width: 32%; box-shadow: 0px 0px 0px 1px #ccc inset; margin-right: 10px; padding: 1px 1px; float: left; }
+.div-cont3 .row-td p{ margin-top: 15px; font-size: 18px; color: #fff; line-height: 28px; }
+
+.div-cont3 .row-td1 { margin-top: 10px; }
+.div-cont3 .row-td1 li{ height: 720px; float: left; margin-right: 10px;  }
+.div-cont3 .row-td1 li .col-x{ width: 780px; height: 332px; background: url(../images/zscp_x.jpg) no-repeat; border: 1px solid #ccc;  background-size: 100% auto; }
+.div-cont3 .row-td1 li .col-x p{ width: 320px; height: 140px; line-height: 28px; margin-top: 180px; padding: 0px 20px;  font-size: 16px; color: #fff;}
+.div-cont3 .row-td1 li .col-qu{
+    margin-top: 31px; width: 780px; height: 332px; background: url(../images/zscp_qu.jpg) no-repeat;
+    border: 1px solid #ccc;  background-size: 100% auto;
+}
+.div-cont3 .row-td1 li .col-qu p{  width: 320px; height: 140px; line-height: 28px; margin-top: 180px; padding: 0px 20px;  font-size: 16px; color: #fff; }
+.div-cont3 .row-td1 li img{ border: 1px #ccc solid; }
+
+.div-hongdi .div{ width: 100%; clear: both;}
+.div-hongdi .row-hongdi{ display: block; overflow: hidden; font-size: 0;}
+
+.div-lingx .div{ width: 100%;clear: both; }
+.div-lingx .row-lingx img{ display: block; overflow: hidden; }
+.div-lingx .row-hongdi { display: block; overflow: hidden; font-size: 0;}
+
+.div-zszc{ background: #000;}
+.div-zszc .row-zszc{ display:block; overflow: hidden; margin: 0 auto; }
+.div-zszc .row-zszc img{display: block; overflow: hidden;}
+.div-zszc .row-table { margin-bottom: 20px;}
+.div-zszc .row-table table{ display: block; overflow: hidden; width: 1000px; height: 700px; margin: 0 auto;  border: 1px solid #ccc;}
+.div-zszc .row-table table tr td{ width: 500px; height: 100px;  line-height: 102px; text-align: center; font-size: 20px; color: #fff; border: 1px solid #ccc; }
+.div-zszc .row-table table tr td:first-child{ font-size: 26px; color: #f00; }
+
+.div-jiameng .div{width: 100%;}
+.div-jiameng .row-jiameng img{ display: block; overflow: hidden; }
+
+.div-tubiao{background: #000; }
+.div-tubiao .row-tubiao{  display: block; overflow: hidden;  }
+.div-tubiao .row-tubiao li{ width:25%; height: 300px;  float: left; text-align: center; }
+.div-tubiao .row-tubiao li .c-img{ width: 170px; padding-top: 170px; display: block; overflow: hidden; margin: 0 auto; }
+.div-tubiao .row-tubiao li span{ margin-top: 20px; font-size: 28px; color: #fff;}
+.div-tubiao .row-tubiao li span i{ font-size: 36px; color: #f00; }
+
+.div-phone .div{ width: 100%; }
+.div-phone .row-phone img{ display: block; overflow: hidden; }
+
+
+

@@ -1,0 +1,269 @@
+
+@import "init.css";
+@import "head.css";
+@import "foot.css";
+@import "div_arc_slide_baijiu.css";
+
+body {background: #e7e3e2;}
+
+.div-slide .div {margin-bottom: 0;}
+
+.main .div {margin-bottom: 30px;}
+.main .th1 {height: auto;text-align: center;border-bottom: 2px solid #888;}
+.main .th1 h2 {display: inline-block;float: none;height: 40px;line-height: 42px;font-size: 30px;}
+.main .th1 h2 a:hover {color: #f00;}
+
+.div-note .div {border-radius: 0px 0px 3px 3px;box-shadow: 0px 0px 5px 2px #ccc;}
+.div-note .box {height: 40px;padding: 5px 10px;background: #eee;}
+
+.div-note .row-list .h2 {float: left;height: 40px;line-height: 42px;margin: 0px 10px 0px 5px;}
+.div-note .row-list .h2 h2 {height: auto;}
+.div-note .row-list .h2 h2 a {
+    display: block;height: 40px;line-height: 42px;padding-left: 40px;overflow: hidden;font-size: 16px;color: #666;
+    background: url(../image/baijiu/icon_note.png) left no-repeat;
+    background-size: 30px auto;
+}
+.div-note .row-list li {
+    float: left;width: 50%;height: 40px;line-height: 42px;padding-left: 0;font-size: 14px;color: #666;
+}
+.div-note .row-list li div {margin: 0px 10px;}
+.div-note .row-list li i {float: right;padding-left: 5px;font-family: Arial;}
+.div-note .row-list a:hover {color: #f00;}
+
+.div-nav {height: 0;overflow: visible;}
+.div-nav .div {margin-bottom: 0;overflow: visible;}
+.div-nav .box {
+    width: 120px;margin: 5px;padding: 5px;transform: translate(calc(-100% - 40px), 0px);
+    box-shadow: 0px 0px 5px #ccc;border-radius: 5px;
+    background: #f5f5f5 padding-box;
+}
+.div-nav .box.p_pop {transform: translate(0px, 0px);}
+.div-nav .row-list {
+    padding: 10px 0px;border-radius: 5px;background: #c00;
+}
+.div-nav .row-list li {display: block;}
+.div-nav .row-list li a {
+    display: block;height: 50px;line-height: 52px;overflow: hidden;text-align: center;font-size: 18px;
+    border-bottom: 2px solid #ddd;background: #fff;
+}
+.div-nav .row-list li:nth-last-child(1) a {border-bottom: none;}
+.div-nav .row-list li.on a {color: #eee;background: #111;}
+
+.div-goods .row-menu {
+    float: left;width: 230px;height: 700px;margin-right: 20px;
+    border: 10px solid #edebec;border-radius: 5px;
+    background: #fff url(../image/baijiu/dt.jpg) bottom no-repeat padding-box;
+    background-size: calc(100% - 20px) auto;
+}
+.div-goods .row-menu .h2 {height: auto;}
+.div-goods .row-menu .h2 h2 {
+    float: none;height: 60px;line-height: 62px;text-align: center;font-size: 24px;
+    border-radius: 5px 5px 0px 0px;background: #a00;
+}
+.div-goods .row-menu .h2 h2 a {display: block;height: 100%;overflow: hidden;color: #fff;}
+.div-goods .row-menu li {display: block;border-bottom: 1px solid #ddd;}
+.div-goods .row-menu li a {
+    display: block;height: 60px;line-height: 62px;overflow: hidden;
+    text-align: center;font-size: 18px;
+}
+.div-goods .row-menu li.on a {color: #eee;background: #888;}
+
+.div-goods .row-list {height: 700px;margin-top: 10px;background: #fff;}
+.div-goods .row-list .part-block {margin: 0px 20px;}
+.div-goods .row-list .c-frame {width: calc(100% + 40px);transform: translate(-20px, 0px);}
+.div-goods .row-list .ul {display: block;height: calc(100% - 20px);padding-top: 20px;}
+.div-goods .row-list .ul:nth-of-type(1) {display: block;}
+.div-goods .row-list li {float: left;width: 33.33%;}
+.div-goods .row-list li div {margin: 0px 20px;}
+.div-goods .row-list li span a {
+    display: block;height: 70px;line-height: 70px;overflow: hidden;
+    text-align: center;font-size: 18px;
+}
+.div-goods .row-list li a:hover {color: #f00;}
+
+.div-xx .row-list .ul {width: calc(100% + 60px);transform: translate(-30px, 0px);}
+.div-xx .row-list li {float: left;width: 50%;margin-top: 40px;}
+.div-xx .row-list li div {margin: 0px 30px;}
+.div-xx .row-list li em {float: left;width: 50px;height: 140px;margin: 60px 50px 0px 0px;overflow: hidden;}
+.div-xx .row-list li em a {display: block;position: relative;height: 100%;overflow: hidden;}
+.div-xx .row-list li em a * {
+    display: block;position: absolute;left: 0;top: 50%;width: 30px;line-height: 20px;overflow: hidden;
+    text-align: center;font-size: 20px;transform: translate(0, -50%);
+}
+.div-xx .row-list li em a i {font-weight: 700;}
+.div-xx .row-list li em a u {
+    left: auto;right: 0;width: 20px;height: 100%;line-height: 20px;
+    writing-mode: vertical-lr;font-size: 12px;color: #aaa;
+}
+.div-xx .row-list li ins {
+    display: block;position: relative;height: 200px;overflow: hidden;
+}
+.div-xx .row-list li .c-img {z-index: 1;float: left;width: 150px;margin-left: 30px;padding-top: 150px;border-radius: 50%;}
+.div-xx .row-list li p {
+    position: absolute;left: 0;bottom: 0;width: 100%;height: 140px;line-height: 25px;
+    font-size: 14px;color: #666;transition: box-shadow 0.5s;
+    box-shadow: 0px 0px 0px 2px #aaa inset;
+}
+.div-xx .row-list li:hover p {box-shadow: 0px 0px 0px 2px #f00 inset;}
+.div-xx .row-list li p a {display: block;margin-left: 180px;padding: 20px;}
+.div-xx .row-list li a:hover {color: #f00;}
+
+.div-zs .part-list {width: calc(100% + 20px);margin-top: 20px;transform: translate(-10px, 0px);}
+.div-zs .row-list {float: left;width: 33.33%;}
+.div-zs .row-list .h2 h2 {font-size: 18px;}
+.div-zs .row-list .h2 .c-more {float: right;font-size: 18px;color: #666;}
+.div-zs .row-list .h2 a:hover {color: #f00;}
+.div-zs .row-list .part-block {margin: 0px 10px;padding: 10px 20px 20px 20px;background: #fff;}
+.div-zs .row-list li {margin-top: 10px;}
+.div-zs .row-list li .c-img {float: left;width: 140px;margin-right: 10px;padding-top: 90px;}
+.div-zs .row-list li span {font-size: 14px;}
+.div-zs .row-list li p {line-height: 20px;margin-top: 5px;font-size: 14px;}
+.div-zs .row-list li p a {color: #666;}
+.div-zs .row-list li a:hover {color: #f00;}
+
+.div-video .d-img .c-img::after, .div-video .d-img .c-img::before {
+    display: block;position: absolute;z-index: 2;left: 50%;top: 50%;width: 0;height: 0;content: '';
+    transform: translate(-50%, -50%);transition: border 0.5s;
+    border: 25px solid transparent;border-left: 35px solid rgba(255, 255, 255, 0.6);
+    border-right: none;
+}
+.div-video .d-img .c-img::before {
+    z-index: 1;margin-left: 16px;border: 30px solid transparent;border-left: 41px solid rgba(0, 0, 0, 0.3);
+}
+.div-video .d-img .c-img:hover::after {border-left-color: rgba(255, 255, 255, 0.9);}
+.div-video .d-img .c-img:hover::before {border-left-color: rgba(0, 0, 0, 0.6);}
+
+.div-video .box {padding: 10px 20px 20px 20px;background: #fff;}
+.div-video .part-list {margin-top: 10px;}
+.div-video .row-th .h2 {height: auto;}
+.div-video .row-th .h2 h2 {font-size: 18px;border-bottom: 2px solid #a00;}
+.div-video .row-th .h2 .c-more {float: right;font-size: 18px;}
+.div-video .row-th .h2 a:hover {color: #f00;}
+
+.div-video .row-img {float: left;width: 50%;margin-right: 20px;}
+.div-video .row-img li {display: block;}
+.div-video .row-img li .c-img {padding-top: 320px;}
+
+.div-video .row-list li {display: block;margin-top: 20px;}
+.div-video .row-list li:nth-of-type(1) {margin-top: 0;}
+.div-video .row-list li .c-img {float: left;width: 200px;margin-right: 10px;padding-top: 150px;}
+.div-video .row-list li span {font-size: 16px;}
+.div-video .row-list li p {margin-top: 5px;line-height: 20px;font-size: 14px;}
+.div-video .row-list li p a {color: #666;}
+.div-video .row-list li a:hover {color: #f00;}
+
+.div-jm .part-list {margin-top: 20px;padding: 20px;background: #fff;}
+.div-jm .row-img {float: left;width: 350px;margin-right: 20px;}
+.div-jm .row-img li {display: block;}
+.div-jm .row-img li .c-img {padding-top: 280px;}
+
+.div-jm .part-arc-list {width: calc(100% + 20px);transform: translate(-10px, 0px);}
+.div-jm .row-list {float: left;width: 50%;}
+.div-jm .row-list .part-block {margin: 0px 10px;}
+.div-jm .row-list .h2 {height: auto;border-bottom: 1px solid #f00;}
+.div-jm .row-list .h2 h2 {border-bottom: 1px solid #f00;font-size: 18px;}
+.div-jm .row-list .h2 h2 a {display: block;padding: 0px 5px;overflow: hidden;}
+.div-jm .row-list .h2 .c-more {float: right;font-size: 18px;color: #666;}
+.div-jm .row-list .h2 a:hover {color: #f00;}
+.div-jm .row-list .ul {margin-top: 5px;}
+.div-jm .row-list li {display: block;height: 25px;line-height: 27px;margin-top: 5px;font-size: 14px;}
+.div-jm .row-list li i {float: right;font-family: Arial;color: #666;}
+.div-jm .row-list li a:hover {color: #f00;}
+
+.div-wt .part-list {width: calc(100% + 20px);margin-top: 5px;transform: translate(-10px, 0px);}
+.div-wt .row-list {float: left;width: 33.33%;margin-top: 10px;}
+.div-wt .row-list:nth-last-child(1), .div-wt .row-list:nth-last-child(2) {width: 50%;}
+.div-wt .row-list .part-block {margin: 5px 10px;padding: 10px 20px 20px 20px;background: #fff;}
+.div-wt .row-list .part-block:hover {box-shadow: 0px 0px 2px #ddd;}
+.div-wt .row-list .h2 {border-bottom: 1px solid #a00;}
+.div-wt .row-list .h2 h2 {font-size: 18px;}
+.div-wt .row-list .h2 .c-more {float: right;font-size: 18px;font-family: Arial;color: #666;}
+.div-wt .row-list .h2 .c-more small {padding-left: 3px;font-size: 16px;font-family: simsun;}
+.div-wt .row-list .h2 a:hover {color: #f00;}
+.div-wt .row-list .ul {height: 125px;margin-top: 5px;}
+.div-wt .row-list li {display: block;margin-top: 5px;}
+.div-wt .row-list li::after {top: 11px;}
+.div-wt .row-list li span {font-size: 16px;}
+.div-wt .row-list li p {line-height: 18px;margin-top: 5px;font-size: 14px;}
+.div-wt .row-list li p a {color: #666;}
+.div-wt .row-list li a:hover {color: #f00;}
+
+.div-tj .div {margin-bottom: 0;}
+.div-tj .row-list {padding: 40px 50px;}
+.div-tj .row-list .c-page {display: block;width: 40px;font-size: 60px;color: #aaa;background: none;}
+.div-tj .row-list .c-page:hover {color: #f00;}
+.div-tj .row-list .ul {width: calc(100% + 40px);transform: translate(-20px, 0px);}
+.div-tj .row-list li {display: none;float: left;width: 25%;}
+.div-tj .row-list li:nth-of-type(1), .div-tj .row-list li:nth-of-type(2),
+.div-tj .row-list li:nth-of-type(3), .div-tj .row-list li:nth-of-type(4) {
+    display: block;
+}
+.div-tj .row-list li div {margin: 0px 20px;transition: border 0.2s;border: 1px solid #ddd;background: #fff;}
+.div-tj .row-list li span {
+    height: 50px;line-height: 52px;text-align: center;font-size: 18px;transition: border 0.2s;
+    border-top: 1px solid #ddd;
+}
+.div-tj .row-list li a:hover {color: #f00;}
+.div-tj .row-list li:hover div {border-color: #f00;}
+.div-tj .row-list li:hover span {border-color: #f00;}
+
+.div-msg {background: #fff;}
+.div-msg .div {margin-bottom: 0;}
+.div-msg .box {padding: 60px 0px;}
+.div-msg .row-th .h2 {height: auto;}
+.div-msg .row-th .h2 h2 {
+    float: none;height: auto;line-height: normal;margin: 0 auto;font-size: 24px;color: #111;
+}
+.div-msg .row-th .h2 h2 em {
+    display: block;height: 35px;line-height: 37px;letter-spacing: 2px;font-size: 30px;color: #666;
+}
+
+.div-msg .part-box {margin-top: 40px;}
+.div-msg .row-info {float: left;width: 50%;}
+.div-msg .row-info .ul {padding: 10px 20px;}
+.div-msg .row-info li {display: block;margin-top: 10px;font-size: 14px;}
+.div-msg .row-info li b {
+    float: left;width: 80px;height: 28px;line-height: 30px;padding-right: 5px;overflow: hidden;text-align: right;
+}
+.div-msg .row-info li .c-input {
+    width: 300px;height: 29px;line-height: 29px;padding: 1px 5px 0px 5px;
+}
+.div-msg .row-info li textarea {
+    width: calc(100% - 10px);height: 100px;line-height: 20px;padding: 5px;font-size: 14px;
+}
+.div-msg .row-info li .c-input, .div-msg .row-info li textarea {
+    font-size: 14px;box-shadow: 0px 0px 0px 1px #ddd inset;
+    border: none;border-radius: 3px;background: #f5f5f5;
+}
+.div-msg .row-info li.col-submit input {
+    float: left;height: 40px;line-height: 40px;margin-right: 10px;padding: 0px 30px;overflow: hidden;
+    font-size: 14px;font-family: "microsoft yahei";cursor: pointer;
+    border: none;border-radius: 3px;background: #f5f5f5;
+}
+.div-msg .row-info li.col-submit .c-ok {color: #eee;background: #a00;}
+.div-msg .row-info li.col-submit .c-ok:hover {color: #fff;background: #f00;}
+.div-msg .row-info li.col-submit .c-reset {color: #666;box-shadow: 0px 0px 0px 1px #ddd inset;}
+.div-msg .row-info li.col-submit .c-reset:hover {color: #333;box-shadow: 0px 0px 0px 1px #aaa inset;}
+
+.div-msg .row-list {padding: 10px 10px 10px 10px;border: 2px solid #ddd;}
+.div-msg .row-list .h2 {padding-bottom: 5px;}
+.div-msg .row-list .h2 h2 {font-size: 18px;}
+.div-msg .row-list .ul {position: relative;height: 225px;}
+.div-msg .row-list .ul::after {
+    display: block;position: absolute;left: 0;top: 0;width: 100%;height: 1px;content: '';
+    background: #ddd;
+}
+.div-msg .row-list li {
+    display: block;padding: 5px 0px;font-size: 12px;
+    color: #666;border-top: 1px dotted #ddd;
+}
+.div-msg .row-list li b {float: left;padding-right: 5px;}
+
+.div-flink .box {padding: 20px 0px;}
+.div-flink .row-link .h2 h2 {font-size: 24px;color: #666;}
+.div-flink .row-link .h2 h2 i {font-family: arial;}
+.div-flink .row-link .h2 h2 em u {font-size: 30px;color: #333;}
+.div-flink .row-link .ul {margin-top: 15px;padding-top: 10px;border-top: 1px solid #fff;}
+.div-flink .row-link li {float: left;margin-right: 10px;}
+.div-flink .row-link li a {display: block;height: 25px;line-height: 27px;overflow: hidden;font-size: 12px;color: #666;}
+.div-flink .row-link li a:hover {color: #f00;}

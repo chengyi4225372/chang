@@ -1,0 +1,12 @@
+
+.go2top {height: 0;}
+.go2top .div {position: fixed;z-index: 999;right: 10px;bottom: 100px;width: 50px;}
+.go2top .row-btn {transition: transform 0.5s;transform: translate(100%, 0);}
+.go2top .row-btn.on-show {transform: translate(0, 0);}
+.go2top .row-btn .c-go2top {
+    display: block;height: 50px;overflow: hidden;
+    transition: background-image 0.5s;border-radius: 3px;
+    background: url(../images/icon_gotop.png) center no-repeat;
+    background-size: contain;
+}
+.go2top .row-btn .c-go2top:hover {background-image: url(../images/icon_gotop_h.png);}

@@ -1,0 +1,154 @@
+
+<include file="Share/header" />
+
+<!-- 内容区域 -->
+<div class="tpl-content-wrapper">
+
+    <div class="row-content am-cf">
+
+        <div class="row">
+
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                <div class="widget am-cf">
+                    <div class="widget-head am-cf">
+                        <div class="widget-title am-fl">{$title}</div>
+                        <div class="widget-function am-fr">
+                            <a href="javascript:;" class="am-icon-cog"></a>
+                        </div>
+                    </div>
+                    <div class="widget-body am-fr">
+
+                        <form class="am-form tpl-form-border-form tpl-form-border-br">
+                            <div class="am-form-group">
+                                <label for="title" class="am-u-sm-3 am-form-label">分类名称 <span class="tpl-form-line-small-title">Title</span></label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="title" placeholder="请输入标题文字" value="{$news_detail.title}">
+                                    <small>请填写标题文字</small>
+                                </div>
+                            </div>
+
+                            <div class="am-form-group">
+                                <div class="am-u-sm-9 am-u-sm-push-3">
+                                    <button type="button" class="am-btn am-btn-primary tpl-btn-bg-color-success j-submit">提交</button>
+                                    <button type="button" class="am-btn am-btn-default "  onclick="window.location.href='index'">取消</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(function(){
+        var _this = this;
+        // 获取新闻ID
+        var _search = window.location.search;
+
+        var _page_id = ''
+
+        //图片路径
+        var _img_path = ''
+
+        if (_search.indexOf('?id') != -1){
+
+            _page_id = _search.split('id=')[1];
+
+        }
+
+        // 提交
+        $('.j-submit').on('click',function(){
+
+            var is_show = $('.tpl-switch-btn').is(":checked") ? 1 : 0;
+
+            if(!$('#title').val()){
+                alert('标题不能为空！')
+                return false;
+            }
+
+            var param = {
+                title : $('#title').val(),
+            }
+            if (!_page_id) {
+                param = $.extend(param,{
+                    do : 'create_cates'
+                })
+            } else {
+                param = $.extend(param,{
+                    do : 'edit_cates',
+                    id : _page_id
+                })
+            }
+
+            $.ajax({
+
+                url: "create",
+                data:param,
+                type:'post',
+                success:function(res) {
+                    if(res.status == 1){
+                        alert("操作成功！")
+                        window.location.href = '{:U("protuct/index")}';
+                    } else {
+                        alert(res.data)
+                    }
+                }
+            });
+
+
+        })
+        //上传图片
+        file_upload.onchange = function(e){
+
+            var files = this.files
+
+            var data = new FormData();
+
+            for (var i = 0; i < files.length; i++) {
+
+                data.append('file[]', files[i]);
+
+            }
+
+            $.ajax({
+
+                url: "uploadImg",
+
+                data: data,
+
+                type:'post',
+
+                cache: false,
+
+                contentType: false,
+
+                processData: false,
+
+                success:function(res) {
+
+                    if(res) {
+
+                        _this._img_path = res
+
+                        $('#cover-img').attr('src','/Uploads/'+_this._img_path)
+
+
+                    }
+
+                }
+
+            });
+
+        }
+
+    })
+
+</script>
+
+
+
+
+<include file="Share/footer" />

@@ -1,0 +1,102 @@
+
+@import "init.css";
+@import "head.css";
+@import "foot.css";
+
+.main .th1 {height: 40px;padding: 0px 20px;background: #a00; margin-top: 10px;}
+.main .th1 h2 {
+    height: 40px;line-height: 40px;padding-left: 30px;font-size: 18px;color: #f7c696;
+    background: url(../image/cptx/icon_info.png) left no-repeat;
+    background-size: 20px 20px;
+}
+.main .th1 h2 a {display: block;color: #f7c696; }
+
+.row-title{ width: 100%; display: inline-block; overflow: hidden; text-align: center; margin-top: 20px;}
+.row-title .col-wz a{ height: 25px; line-height: 27px; margin-top: 3px; font-size: 26px; color: #f00;}
+.row-title .col-hx {display: block; overflow: hidden; width: 240px; margin: 0 auto; margin-top: 8px;  border:1px solid #f00; }
+.row-title .col-yw {  height: 25px; line-height: 27px; font-size: 14px; color: #f00; margin-bottom: 6px; }
+
+.div-banner .div{ width: 100%; }
+.div-banner .row-banner img{ width: 100%; display: block; overflow: hidden;}
+
+
+.div-goods .row-list {background: #eee;}
+.div-goods .row-list .h2 h2 {background-image: url(../image/cptx/icon_wine.png);}
+.div-goods .row-list .slide:hover .c-page {display: block;}
+.div-goods .row-list .ul {margin: 20px 10px 20px 10px;}
+.div-goods .row-list li {display: none;float: left;width: 25%;}
+.div-goods .row-list li .c-img img{ transition: transform 0.2s; }
+.div-goods .row-list li .c-img img:hover { transform: scale(1.1, 1.1); }
+.div-goods .row-list li:nth-of-type(1), .div-goods .row-list li:nth-of-type(2),
+.div-goods .row-list li:nth-of-type(3), .div-goods .row-list li:nth-of-type(4) {
+    display: block;
+}
+.div-goods .row-list li div {
+    position: relative;margin: 0px 10px;padding: 10px;
+    box-shadow: 0px 0px 0px 2px #ddd inset;background: #fff;
+}
+.div-goods .row-list li div::after, .div-goods .row-list li div::before {
+    display: block;position: absolute;right: 0;bottom: 0;width: 20px;height: 20px;content: '';
+    background: #eee;
+}
+.div-goods .row-list li div::after {
+    z-index: 1;-webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+    background: #ddd;
+}
+.div-goods .row-list li span {height: 25px;line-height: 27px;margin-top: 5px;text-align: center;font-size: 16px;}
+.div-goods .row-list li span a:hover{ color: #f00;}
+.div-bjystu .div{width: 100%;}
+.div-bjystu .row-bjystu{  display: block; overflow: hidden; }
+.div-ystu .div{ width:100%; }
+.div-ystu .row-ystu{ display: block; overflow: hidden; }
+
+.div-hongd .div{ width: 100%; clear: both;}
+.div-hongd .row-hongd{ margin-top: 10px; display: block; overflow: hidden; font-size: 0; }
+
+
+.div-zszc{ background: #000;}
+.div-zszc .row-zszc{ display:block; overflow: hidden; margin: 0 auto; }
+.div-zszc .row-zszc img{display: block; overflow: hidden;}
+.div-zszc .row-table { margin-bottom: 20px;}
+.div-zszc .row-table table{ display: block; overflow: hidden; width: 1000px; height: 700px; margin: 0 auto;  border: 1px solid #ccc;}
+.div-zszc .row-table table tr td{ width: 500px; height: 100px;  line-height: 102px; text-align: center; font-size: 20px; color: #fff; border: 1px solid #ccc; }
+.div-zszc .row-table table tr td:first-child{ font-size: 26px; color: #f00; }
+
+.div-jiameng .div{width: 100%;}
+.div-jiameng .row-jiameng img{ display: block; overflow: hidden; }
+
+.div-tubiao{background: #000; }
+.div-tubiao .row-tubiao{  display: block; overflow: hidden;  }
+.div-tubiao .row-tubiao li{ width:25%; height: 300px;  float: left; text-align: center; }
+.div-tubiao .row-tubiao li .c-img{ width: 170px; padding-top: 170px; display: block; overflow: hidden; margin: 0 auto; }
+.div-tubiao .row-tubiao li span{ margin-top: 20px; font-size: 28px; color: #fff;}
+.div-tubiao .row-tubiao li span i{ font-size: 36px; color: #f00; }
+
+.div-phone .div{ width: 100%; }
+.div-phone .row-phone img{ display: block; overflow: hidden; }
+
+
+.main .row-th2 {text-align: center;margin: 15px;overflow: visible;}
+.main .row-th2 h2 {display: inline-block;float: none;font-size: 40px;color: #c00;margin-bottom: 10px;}
+.main .row-th2 em {display: block;overflow: visible;position: relative;width: 520px;margin: 0 auto;height: 2px;background: #666666;}
+.main .row-th2 em span {
+    display: block;position: absolute;left: 50%;top: -9px;transform: translate(-50%,0);padding: 0px 10px;font-size: 16px;background: #f3f3f3;
+}
+
+.div-jmanli .box { padding: 0px 20px;border: 1px solid #4c4c4c; }
+.div-jmanli .row-th2 {margin-bottom: 40px;}
+.div-jmanli .row-list {float: left;width: 33.33%;}
+.div-jmanli li {border: none !important; padding: 15px 0px !important;}
+.div-jmanli li i {display: block;width: 4px; height: 4px;border-radius: 4px; background: #000000;float: left; margin: 8px 10px 0px 0px;}
+.div-jmanli .row-img h2 {float: none;font-size: 22px;color: #ce060a;}
+.div-jmanli .row-anli .h2 a,.div-anli .row-went .h2 a{font-size: 14px;}
+.div-jmanli .row-img .c-img {width: 386px;padding-top: 320px;}
+.div-jmanli .row-anli .h2,.div-anli .row-anli .ul {margin: 0px 10px;}
+.div-jmanli .row-anli .ul,.div-anli .row-went .ul {border-top: solid 2px #c00;}
+.div-jmanli .row-anli h2,.div-anli .row-went h2 {font-size: 18px;border-bottom: solid 3px #c00;height: auto !important;}
+.div-jmanli .row-anli .h2 a,.div-anli .row-went .h2 a {color: #c00;}
+.div-jmanli li {font-size: 15px;}
+.div-jmanli li em {display: block;float: right;overflow: hidden;}
+
+.div-anli .row-list li:hover a,.div-news .p-anli li:hover em {color: #FF0000;}
+

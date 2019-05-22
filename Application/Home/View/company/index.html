@@ -1,0 +1,86 @@
+<include file="public/head" />
+<link href="/Public/index/templets/in_dd/css/box_arc.css" type="text/css" rel="stylesheet" />
+<link href="/Public/index/templets/in_dd/css/list_arc_page.css" type="text/css" rel="stylesheet" />
+
+<include file="public/top" />
+
+<include file="public/menu" />
+
+
+<div id="main" class="main">
+    <div id="div-banner" class="div-banner"></div>
+
+    <div id="div-content" class="div-content">
+        <div class="div">
+            <div class="p-menu">
+                <div class="box">
+
+                    <div class="block row-menu">
+                        <div class="h2"><h2>走进大黔朝</h2></div>
+                        <div class="ul">
+                            <ul>
+                                <volist name="moves" id="vo" key="k" >
+                                    <li <if condition="$Think.get.id eq $vo.id"> class="on col{$k}" </if> ><a href="{:U('company/index')}?id={$vo.id}">{$vo.title}</a></li>
+                                </volist>
+                            </ul>
+                        </div>
+                    </div>
+                      <!--
+                    <div class="block row-hot">
+                        <div class="h2"><h2>热门推荐</h2></div>
+                        <div class="ul">
+                            <ul>
+
+                            </ul>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="p-content">
+                <div class="box">
+                    <div class="block row-path">
+                        <h2>公司简介</h2>
+                        <div>
+                            <i>当前位置：</i>
+                            <h1><a href="/">首页</a><small>&gt;</small><a href='http://www.daqianchao.com/zoujindaqianchao/'>走进大黔朝</a><small>&gt;</small><a href='http://www.daqianchao.com/qiye/'>公司简介</a></h1>
+                        </div>
+                    </div>
+                    <div class="block row-content">
+                        <div class="b-content">
+                            <div class="d-content">
+                                <p style="font-size:16px;">
+                                　　贵州大黔朝酒业有限公司成立于1995年 8 月，注册资金120万。公司以&ldquo;质量第一、产量服从质量、成本服从质量、效益服从质量、发展服从质量&rdquo;为宗旨，产品面向全国市场。</p>
+                                <br />
+                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" data-src="http://www.daqianchao.com/uploads/allimg/170925/6-1F9251P320D3.jpg" width="1277" height="843" alt="贵州大黔朝公司大厅" />
+                                <br />
+                                <br />
+                                <p style="font-size:16px;">
+                                    　　我公司投入巨资在中国酒都&mdash;&mdash;仁怀市茅台镇上坪村倾力打造酱香型白酒生产基地，基地占地面积约300亩，年基酒生产能力4500吨，基酒储存能力15000吨。公司所有产品完全按照茅台镇传统的生产工艺要求，严格按照节气，端午采曲，重阳投料，全年分两次投料，同一批料要经九次蒸煮，加曲，堆积发酵。一年一个生产周期。在此期间内，经高温制曲，高温堆积，高温入池，高温接酒，低糖化制曲，低水份入池，低出酒量， 低酒精浓度等工艺，保证了茅台镇正宗的制酒工艺，使酒的品质极优，酒体香而不艳，低而不淡，丰满醇厚，回味悠长，空杯留香，且饮后不上头，不口干，为白酒中的珍品。</p>
+                                <br />
+                                <video controls="" poster="http://www.daqianchao.com/templets/indd/images/index_video.jpg" preload="auto" src="http://www.daqianchao.com/links/ss.mp4">
+                                    &nbsp;</video>
+                                <br />
+                                <p style="font-size:16px;">
+                                    　　贵州大黔朝酒业有限公司极力打造的 &ldquo;大黔朝&rdquo;洞藏老坛酒，采用茅台镇本地糯高粱、小麦、水为原料，秉承贵州茅台千年传统酿造工艺，经九次蒸煮、八次发酵、七次蒸馏取酒，整整一年生产周期精心酿制而成。然后调酒大师根据各轮次酒不同特征，按不同比例进行大盘勾，这种粹取了七轮次酒之精华的原浆酒，在茅台镇用千斤、两千斤陶坛首先储存于通风、避光、清洁、常温条件下，经受自然界四季温差变化，酒体与茅台镇特殊的自然环境中丰富的微生物群、氧气发生吐纳作用，不断的醇化老熟达三年以上，再进行精勾细调，并以特殊的香纸封坛工艺装在1斤至5斤不等的各种规格的小陶坛中，储存于常年10&deg;C恒温的山洞里又五年，由动态储藏转为静态储藏，酒体内各种酸、酯、醇等有机成分更加协调平衡，口感更加爽口，绵柔。</p>
+                                <br />
+                                <p style="font-size:16px;">
+                                    　　大黔朝洞藏老坛酒可谓吸大自然之灵气，沉淀岁月之风华，一年一个变化，品质更加上乘，更适合成功人士、大师名人、企业财团等珍藏，升华新的价值，享受高品位人生。 是商界有识之士投资的理想项目，并特别适合单位团购、会议招待、商务庆典等使用，是饮酒朋友的最佳选择。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<include file="public/foot" />
+
+<script src="/Public/index/templets/in_dd/js/list_arc_page.js" type="text/javascript"></script>
+
+<include file="public/kefu" />
+</body>
+</html>
+

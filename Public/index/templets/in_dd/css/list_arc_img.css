@@ -1,0 +1,17 @@
+
+@import "init.css";
+@import "head.css";
+@import "foot.css";
+@import "box_arc.css";
+
+.div-list .row-list .b-list {border-top: 1px solid #ddd;}
+.div-list .row-list .b-list li {display: block;margin-top: 20px;}
+.div-list .row-list .b-list li .c-img {float: left;width: 200px;padding-top: 120px;margin-right: 20px;overflow: hidden;}
+.div-list .row-list .b-list li .c-img img {transition: transform 0.2s;}
+.div-list .row-list .b-list li .c-img img:hover {transform: scale(1.1, 1.1);}
+.div-list .row-list .b-list li span {height: 40px;line-height: 20px;margin-top: 15px;font-size: 18px;}
+.div-list .row-list .b-list li span a:hover {color: #f00;}
+.div-list .row-list .b-list li p {margin-top: 10px;font-size: 14px;color: #666;}
+.div-list .row-list .b-list li em {float: right;margin-top: 10px;font-size: 14px;color: #aaa;}
+
+.div-list .row-list .d-pager {padding: 20px;}

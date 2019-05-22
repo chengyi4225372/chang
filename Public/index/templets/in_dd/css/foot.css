@@ -1,0 +1,78 @@
+
+@import "d_go2top.css";
+
+.div {width: 1200px;margin: 0 auto;overflow: hidden;}
+.div div {overflow: hidden;}
+
+.flink .box {padding: 20px 0px;}
+.flink .row-link .h2 h2 {font-weight: 400;}
+.flink .row-link .h2 h2 * {font-style: normal;}
+.flink .row-link .h2 h2 i {font-size: 24px;font-family: arial;color: #333;}
+.flink .row-link .h2 h2 em {padding-left: 5px;font-size: 15px;color: #aaa;}
+.flink .row-link .ul {margin-top: 10px;padding-top: 10px;border-top: 1px solid #ddd;}
+.flink .row-link li {float: left;margin-right: 10px;}
+.flink .row-link li a {display: block;height: 25px;line-height: 27px;overflow: hidden;font-size: 12px;color: #666;}
+.flink .row-link li a:hover {color: #f00;}
+
+.foot {background: #c00;}
+.foot .box {padding-bottom: 20px; }
+.foot .row-list {margin-top: 50px;}
+.foot .row-list li {float: left;}
+.foot .row-list li div {margin-right: 30px;}
+.foot .row-list li span {display: block;height: 25px;overflow: hidden;}
+.foot .row-list li span a {font-size: 18px;color: #eee;}
+.foot .row-list li span a u {padding-left: 3px;text-decoration: none;font-size: 12px;font-family: arial;}
+.foot .row-list li dl {display: block;margin-top: 15px;padding-top: 5px;overflow: hidden;border-top: 1px solid rgba(255, 255, 255, 0.3);}
+.foot .row-list li dt, .foot .row-list li dd {display: block;height: 25px;line-height: 27px;margin-top: 10px;overflow: hidden;font-size: 14px;color: #eee;}
+.foot .row-list li dt {color: #ccc;}
+.foot .row-list li dd a {font-size: 14px;color: #ddd;}
+.foot .row-list li a:hover {color: #fff;}
+.foot .row-list li.col-goods dl {float: left;}
+.foot .row-list li.col-goods dl.c-d dd {float: left;width: 50%;}
+.foot .row-list li.col-goods dl.c-d dd:nth-of-type(2n -1) a {padding-right: 10px;}
+.foot .row-list li.col-dzj {width: 25%;}
+.foot .row-list li.col-sj {width: 45%;}
+.foot .row-list li.col-sj dl {position: relative;max-width: 33.33%;}
+.foot .row-list li.col-sj dl {padding-right: 40px;}
+.foot .row-list li.col-sj dl::after {
+	display: block;position: absolute;right: 20px;top: 50px;width: 1px;height: 100%;content: '';
+	background: rgba(255, 255, 255, 0.3);
+}
+.foot .row-list li.col-sj dl:nth-last-child(1)::after {display: none;}
+
+.foot .row-link {float: right;width: 180px;}
+.foot .row-link li {display: block;margin-top: 20px;}
+.foot .row-link li span {display: block;height: 25px;line-height: 27px;margin-top: 5px;overflow: hidden;text-align: center;color: #fff;}
+.foot .row-link li img {display: block;width: 100%;overflow: hidden;}
+
+.foot-info .box {padding: 50px 0px 30px 0px;}
+.foot-info .d-text img {display: block;max-width: 100%;overflow: hidden;}
+.foot-info .d-text p {display: block;line-height: 25px;margin-top: 5px;overflow: hidden;color: #aaa;}
+
+.foot-info .row-info {float: left;width: 50%;}
+.foot-info .row-info .d-text p:nth-of-type(1) {margin-top: 40px;}
+
+.foot-info .row-search {paddin-left: 20px;}
+.foot-info .row-search .d-text img {float: right;}
+.foot-info .row-search .b-img {margin: 20px 0px 0px 90px;}
+.foot-info .row-search .b-img li {float: left;width: 16.66%;}
+.foot-info .row-search .b-img li div {margin-left: 5px;}
+.foot-info .row-search .b-img li img {display: block;width: 100%;overflow: hdiden;cursor: pointer;}
+.foot-info .row-search .b-img li span {
+	display: block;height: 25px;line-height: 27px;margin-top: 5px;overflow: hidden;text-align: center;font-size:12px;
+}
+.foot-info .row-search .b-search {float: right;margin-top: 20px;}
+.foot-info .row-search .b-search .c-input {
+	float: left;width: 410px;height: 37px;line-height: 37px;padding: 1px 5px 0px 5px;
+	border: 1px solid #f00;border-right: none;border-radius: 3px 0px 0px 3px;
+}
+.foot-info .row-search .b-search .c-btn {
+	float: left;height: 37px;line-height: 37px;padding: 0px 30px;overflow: hidden;
+	font-size: 14px;color: #fff;cursor: pointer;
+	border: none;border-radius: 0px 3px 3px 0px;background: #f00;
+}
+.foot-info .row-search .b-search .c-btn:hover {background: #c00;}
+
+.foot-info .row-link {margin-top: 30px;padding: 10px;clear: both;text-align: center;}
+.foot-info .row-link, .foot-info .row-link * {color: #888;}
+.foot-info .row-link a:hover {color: #f00;}

@@ -1,0 +1,109 @@
+
+@import "init.css";
+@import "head.css";
+@import "foot.css";
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body{
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
+}
+a{ color: rgba(255, 255, 255, 0.6);outline: none;text-decoration: none;-webkit-transition: 0.2s;transition: 0.2s;}
+a:hover,a:focus{color:#74777b;text-decoration: none;}
+
+.div-banner {
+	height: 400px;background: url(../images/show_shop_banner1.jpg) top no-repeat;
+	background-size: auto 100%;
+}
+
+.changjia{ width:1000px; height:auto; background:#300000; margin:0 auto; overflow:hidden; text-align:center;}
+.changjia h2{ width:136px; height:44px; margin:0 auto; background:#F00; color:#F6E38F; font-size:24px; line-height:44px; text-align:center; margin-top:24px; margin-bottom:30px;}
+.changjia p{ text-indent:2em; font-size:14px; color:#F6E38F; padding:20px 30px; text-align:left; line-height:28px;}
+
+.jianjie{ width:100%; height:205px; background:#b91419; color:#FFF;}
+.jianjie h4{ font-size:32px; margin:0 auto; width:145px; padding-top:25px; text-align:center; border-bottom:3px solid #FFF;}
+.jianjie h5{ font-size:22px; margin:0 auto; width:1000px; text-align:center; padding-top:12px;}
+.jianjie p{ width:700px; font-size:16px; margin:0 auto; text-indent:2em; line-height:32px;}
+.sanjian{ background:url(../images/sanjiao.png) no-repeat center; width:100%; height:27px;}
+.dashijian{ width:100%; height:698px; background:url(../images/dashijian.jpg) no-repeat #FFF center 158px;}
+.dashijian h4{ font-size:24px; text-align:center; padding-top:69px;}
+.dashijian h4 span{ color:#bb141b;}
+.dashijian h5{ font-size:36px; text-align:center; padding-top:12px;}
+.zhen{ width:100%; height:519px; background:url(../images/zhen.jpg) no-repeat center;}
+.zhen h4{ font-size:36px; text-align:center; padding-top:48px;}
+.zhen h5{ font-size:24px; padding-top:10px; color:#FFF; text-align:center;}
+.fang{ padding-bottom: 10px;background:#dfdfdf; margin-bottom:45px;}
+.fang h4{ color:#F00; text-align:center; font-size:20px; padding-top:10px; font-weight:bolder;}
+.fang h5{ font-size:24px; text-align:center; padding-top:10px;}
+.fang h6{ font-size:14px; color:#696969; text-align:center; padding-top:10px;}
+.fang h6 span{ color:#730101; padding-left:36px;}
+.tuan{ width:100%; height:153px; background:#b71218 url(../images/baixian.jpg) no-repeat center 83px; text-align:center;}
+.tuan h4{ color:#ffe400; font-size:32px; padding-top:16px;}
+.tuan h4 span{ color:#FFF;}
+.tuan h5{ font-size:32px; color:#FFF; padding-top:10px;}
+.tuan h6{ font-size:12px; color:#FFF; padding-top:12px;}
+.dui{ width:100%; height:auto; background:url(../images/meijiuhe.jpg) no-repeat center 0;}
+.tds{ width:1000px; height:587px; margin:0 auto; background:url(../images/meijiuhebg.png); overflow:hidden;}
+.tsdi{ width:685px; height:515px; background:url(../images/tuandui.jpg) no-repeat; margin:25px auto; text-align:center;}
+#p1{ width:171px; height:169px; float:right; color:#FFF; font-size:12px; padding-top:55px; line-height:24px;}
+#p2{ width:166px; height:169px; float:left; color:#FFF; font-size:12px; line-height:24px; padding-top:55px; margin-top:173px;}
+#p3{ width:340px; height:169px; float:right; color:#FFF; font-size:12px; line-height:24px; padding-top:65px; margin-top:346px; margin-right:-171px;}
+.lil{ width:1000px; height:216px; margin:0 auto; background:#ff7f00;}
+.lil h4{ font-size:24px; color:#FFF; width:713px; background:url(../images/lilbg.png) no-repeat center 24px; padding-top:12px; margin:0 auto; text-align:center;}
+.lil ul{ width:387px; height:113px; margin-left:320px; margin-top:18px; overflow:hidden; background:url(../images/sandian.jpg) no-repeat;}
+.lil ul li{ width:90px; float:left; text-align:center; color:#ff5400; margin-right:39px; padding-top:60px;}
+.xqx{ width:1000px; height:160px; margin:0 auto; background:#FFF url(../images/xianyuan.png) no-repeat 335px 38px; padding-top:100px; }
+.xqx p{ text-align:center; color:#000; font-size:18px;}
+#x1{ color:#ff0000; font-size:22px;}
+#x1 b{ font-size:24px;}
+#x1 span{ font-size:16px;}
+.jie{ width:1000px; height:340px; margin:0 auto; background:#FFF;}
+.shao{ width:660px; height:322px; border:5px solid #ff7f00; float:left;}
+.shao p{ text-indent:2em; font-size:16px; color:#000; line-height:32px; padding:22px; padding-bottom:0 !important;}
+.lianxi{ float:left; width:291px; height:342px; background:url(../images/lianxi2.jpg) no-repeat; margin-left:30px;}
+.lianxi h3{ font-size:28px; color:#d81e06; margin-top:58px; margin-left:130px;}
+.lianxi h4{ font-size:20px; margin-top:60px; margin-left:30px; margin-bottom:12px;}
+.lianxi p{ font-size:14px; color:#252525; line-height:32px; margin-left:30px;}
+.lianxi p strong{ color:#F00;}
+.haohe{ width:1000px; height:auto; overflow:hidden; background:#FFF; margin:0 auto; padding-top:78px;}
+.haohe h3{ margin:0 auto; width:185px; font-size:36px; color:#bb141b; border-bottom:2px solid #bb141b;}
+.haohe p{ padding:20px 90px; text-indent:2em; font-size:14px; line-height:28px;}
+.img{ width:100%; height:668px; background:url(../images/mai.jpg) center no-repeat;}
+.tu{ width:100%; height:2218px; background:url(../images/daqianchao.jpg) no-repeat center top;}
+.mai{ width:1000px; height:auto; margin:0 auto;}
+.mai p{ font-size:14px; color:#30363b; padding-left:560px; padding-top:195px;}
+.mai p strong{ font-size:22px;}
+#l1{ text-align:center; font-size:24px; font-weight:bolder; color:#2b3a48; padding-top:90px;}
+.lisi{ width:1363px; padding-top:1305px; margin:0 auto;}
+.lisi h3{ font-size:40px; color:#000;}
+.lisi h3 strong{ color:#F00;}
+.lisi h4{ padding-left:590px; font-size:24px; color:#cf2025; padding-bottom:24px;}
+.lisi p{ padding-left:590px; text-indent:2em; color:#4c5259; font-size:18px; line-height:36px;}
+.jx{ width:100%; height:655px; background:url(../images/pingjian.jpg) no-repeat top;}
+.jx p{ font-size:39px; color:#d21416; font-weight:bolder; text-align:center; padding-top:36px;}
+.jx strong{ color:#000;}
+.bnnner{ width:100%; height:416px;margin-bottom:5px; background-image:url(../images/dong1.jpg)}
+
+
+
+

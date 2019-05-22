@@ -1,0 +1,41 @@
+
+@import "init.css";
+@import "head.css";
+@import "foot.css";
+@import "box_arc.css";
+
+.div-arc .p-menu {float: left;width: 250px;min-height: 300px;}
+.div-arc .p-menu .box {width: 230px;background: #fff;}
+
+.div-arc .row-bb {display: none;}
+.div-arc .row-title {line-height: 23px;padding-top: 20px;text-align: center;border-top: 1px solid #ddd;}
+.div-arc .row-title h1 {display: inline;font-weight: 400;font-size: 24px;}
+
+.div-arc .row-item {margin-top: 20px;text-align: center;color: #aaa;}
+.div-arc .row-item i {padding: 0px 5px;color: #aaa;}
+.div-arc .row-item i.c-view small {font-size: 12px;font-family: arial;}
+.div-arc .row-item a {color: #aaa;}
+.div-arc .row-item a:hover {color: #666;}
+
+.div-arc .row-content .b-content {padding: 20px;}
+
+.div-arc .row-near {padding: 0px 20px;}
+.div-arc .row-near li {height: 25px;line-height: 27px;margin-top: 5px;font-size: 14px;}
+
+.div-arc .row-relate {margin-top: 10px;}
+.div-arc .row-relate .h2 {position: relative;text-align: center;}
+.div-arc .row-relate .h2::after {display: block;position: absolute;left: 0;top: 50%;width: 100%;height: 1px;content: '';background: #ddd;}
+.div-arc .row-relate .h2 h2 {display: inline-block;position: relative;z-index: 1;float: none;padding: 0px 10px;background: #fff;}
+
+.div-arc .row-relate .ul {padding: 20px 10px;}
+.div-arc .row-relate li {float:left;width: 25%;}
+.div-arc .row-relate li .c-box {margin: 0px 10px;overflow: hidden;}
+.div-arc .row-relate li .c-img {border-radius: 5px;}
+.div-arc .row-relate li .c-img img {transition: transform 0.2s;}
+.div-arc .row-relate li .c-img em {
+    display: block;position: absolute;left: 0;bottom: 0;width: 100%;height: 30px;line-height: 32px;
+    overflow: hidden;text-align: center;text-shadow: 0px 0px 2px #666;font-size: 14px;color: #fff;
+    transition: background 0.2s;background: rgba(0, 0, 0, 0.3);
+}
+.div-arc .row-relate li .c-img:hover img {transform: scale(1.1, 1.1);}
+.div-arc .row-relate li .c-img:hover em {background: rgba(0, 0, 0, 0.1);}
