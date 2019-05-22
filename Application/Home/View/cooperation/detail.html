@@ -49,7 +49,7 @@
                         <div class="ul">
                             <ul>
                                 <volist name="hot" id="vo" key="k">
-                                    <li><a href="{:U('cooperation/detail',array('id'=>$vo.id))}"><i>{$vo.lan|default=''}</i><em>{$k}</em><span>{$vo.title}</span></a></li>
+                                    <li><a href="{:U('cooperation/detail',array('id'=>$vo['id'],'pid'=>$vo['pid']))}"><i>{$vo.lan|default=''}</i><em>{$k}</em><span>{$vo.title}</span></a></li>
                                 </volist>
                             </ul>
                         </div>
